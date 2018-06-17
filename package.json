@@ -1,0 +1,15 @@
+{
+  "name": "toDos-a1",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server -a localhost -p 8001 -c-1 ./app"
+  },
+  "author": "Jack Stephens",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.9.0"
+  }
+}
