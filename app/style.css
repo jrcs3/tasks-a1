@@ -1,0 +1,6 @@
+.table {
+    background-color: white;
+}
+.table-striped tr:nth-child(even) {
+    background-color: lightblue;
+}

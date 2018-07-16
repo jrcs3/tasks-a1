@@ -1,0 +1,25 @@
+<h2>To Do Item</h2>
+<form ng-submit="updateTodo()" novalidate>
+    <div ng-if="!isLoaded">
+        <p>Loading ...</p>
+    </div>
+    <div ng-if="isLoaded">
+        <div ng-if="!isNew">
+            <label>ID:</label>{{toDo.id}}
+            <br />
+        </div>
+        <lable for="title">Title:</lable>
+        <input type="text" name="title" id="title" ng-model="toDo.title" />
+        <br />
+        <lablel for="due">Due:</lablel>
+        <input type="text" name="due" id="due" ng-model="toDo.due" />
+        <br />
+        <lablel for="due">Assigned To:</lablel>
+        <input type="text" name="due" id="due" ng-model="toDo.assignedTo" />
+        <br />
+        <lablel for="done">Done:</lablel>
+        <input id="done" name="done" type="checkbox" ng-model="toDo.done" />
+        <br />
+        <button type="submit">Save To Do</button>
+    </div>
+</form>
