@@ -4,3 +4,15 @@
 .table-striped tr:nth-child(even) {
     background-color: lightblue;
 }
+/* These are for my Angular 6 project */
+a {
+    color: blue;
+}
+button.link-button {
+    background:none!important;
+    color:blue;
+    border:none; 
+    padding:0!important;
+    font: inherit;
+    cursor: pointer;
+}
