@@ -5,9 +5,12 @@ angular
     "$routeProvider",
     function($routeProvider) {
       $routeProvider
+        .when("", {
+          templateUrl: "pages/home/home.component.html",
+          controller: "HomeComponent"
+        })
         .when("/toDo/:id", {
           templateUrl: "pages/to-do-item/to-do-item.component.html",
-          //controller: 'toDoItemController'
           controller: "ToDoItemComponent"
         })
         .when("/toDoList", {
