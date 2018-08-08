@@ -23,15 +23,17 @@ angular
 
       $scope.updateTodo = function() {
         if ($scope.isNew) {
-          toDoService.add($scope.toDo).$promise.then(function(response) {
-            $location.path("toDoList");
+          toDoService
+            .add($scope.toDo)
+            .$promise.then(function(response) {
+              $location.path("toDoList");
           });
         } else {
           toDoService
             .edit({ id: $scope.toDo.id }, $scope.toDo)
             .$promise.then(function(response) {
               $location.path("toDoList");
-            });
+          });
         }
       };
     }

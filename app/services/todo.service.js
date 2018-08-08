@@ -1,6 +1,6 @@
 angular.module('mainModule')
     .constant("baseURL", "http://localhost:9000/")
-    .factory('toDoService', ['$resource', 'baseURL',
+    .service('toDoService', ['$resource', 'baseURL',
     function ($resource, baseURL) {
         return $resource(baseURL + "ToDos/:id", null,
         {
